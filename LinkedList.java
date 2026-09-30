@@ -1,5 +1,3 @@
-package WeekFive;
-
 public class LinkedList
 {
 
@@ -28,6 +26,7 @@ public class LinkedList
 
     public static void printListOfNode(Node node)
     {
+        System.out.print("head-->");
         while(node != null)
         {
             System.out.print(node.data + "-->");
