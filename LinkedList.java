@@ -5,24 +5,30 @@ public class LinkedList
 
     public static void main(String[] args) 
     {
-        NewNode newNode = new NewNode();
-        newNode.data = 101;
+        Node head = null;
+        System.out.print(head + "-->");
+    }
+
+    public static void printListOfNode(Node node)
+    {
+        while(node != null)
+        {
+            System.out.print(node.data + "-->");
+            node = node.next;
+        }
+        System.out.print("null");
+    }
+
+    public static Node insertAtStart(int data, Node head)
+    {
+        Node newNode = new Node();
+        newNode.data = data;
         newNode.next = null;
 
-        System.out.println(newNode.data);
-        System.out.println(newNode.next);
-        
-        NewNode secondNode = new NewNode();
-        secondNode.data = 102;
-        secondNode.next = null;
+        newNode.next = head;
+        head = newNode;
 
-        newNode.next = secondNode;
-
-        System.out.println(newNode.next.data);
-        System.out.println(newNode.next.next);
-        //System.out.println(newNode.next.next.next);
-
-        
-
+        return newNode;
     }
+    
 }
