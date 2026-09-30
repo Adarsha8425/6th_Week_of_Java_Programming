@@ -75,15 +75,15 @@ public class LinkedList
             return;
         }
 
-        if(head.next != null)
+        if(head.next == null)
         {
-            head.next = lastNode;
+            head.next = middleNode;
             return;
         }
 
         Node keyNode = head;
 
-        while(keyNode != null && keyNode != key)
+        while(keyNode != null && keyNode.data != key)
             {
                 keyNode = keyNode.next;
             }
