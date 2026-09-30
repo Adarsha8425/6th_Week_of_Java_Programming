@@ -7,6 +7,15 @@ public class LinkedList
     {
         Node head = null;
         System.out.print(head + "-->");
+
+        System.out.println();
+        head = insertAtStart(105, head);
+        head = insertAtStart(104, head);
+        head = insertAtStart(103, head);
+        head = insertAtStart(102, head);
+        head = insertAtStart(101, head);
+        head = insertAtStart(100, head);
+        printListOfNode(head);
     }
 
     public static void printListOfNode(Node node)
@@ -30,5 +39,6 @@ public class LinkedList
 
         return newNode;
     }
+
     
 }
