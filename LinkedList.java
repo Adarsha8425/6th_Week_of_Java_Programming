@@ -34,7 +34,7 @@ public class LinkedList
         }
         System.out.print("null");
     }
-
+    
     public static Node insertAtStart(int data, Node head)
     {
         Node newNode = new Node();
