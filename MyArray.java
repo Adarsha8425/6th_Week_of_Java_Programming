@@ -4,6 +4,7 @@ public class MyArray {
     int length;//size of an array
     int index; //pointing at empty box. that has elements.
 
+    //this is constructor
     public MyArray()
     {
         length = 5;
