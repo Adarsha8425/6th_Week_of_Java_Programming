@@ -15,7 +15,6 @@ public class MyArray {
     //insert At end
     public void insertAtEnd(int value)
     {
-
         if(index == length)
         {
             System.out.println("Array is full");
@@ -46,7 +45,6 @@ public class MyArray {
 
     public void insertAtAnyPosition(int value, int position)
     {
-
         if(index == length)
         {
             System.out.println("Array is full");
@@ -67,7 +65,6 @@ public class MyArray {
         array[position] = value;
         index++;
     }
-
     //print elements
     public void printElement()
     {
