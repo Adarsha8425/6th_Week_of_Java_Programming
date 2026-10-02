@@ -3,6 +3,7 @@ public class LinearSearch {
     static void searchingKeyValue(int[] array, int key)
     {
         boolean found = false;//key not found
+        
         for(int i = 0; i < array.length; i++)
         {
             if(array[i] == key)
@@ -21,6 +22,7 @@ public class LinearSearch {
     {
         int [] array = {10, 20, 30, 70, 50, 60};
         int key = 40;
+        //calling method
         searchingKeyValue(array, key);
     }
 }
