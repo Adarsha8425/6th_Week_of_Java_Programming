@@ -1,9 +1,8 @@
 public class LinearSearch {
-    
+
     static void searchingKeyValue(int[] array, int key)
     {
         boolean found = false;//key not found
-
         for(int i = 0; i < array.length; i++)
         {
             if(array[i] == key)
