@@ -18,6 +18,7 @@ public class GreaterThean {
         char target = 'p';
 
         char result = smallest(ch, target);
+        
         System.out.println(result);
     }
 }
